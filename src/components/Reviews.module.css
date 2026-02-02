@@ -1,0 +1,136 @@
+/* Секция отзывов reviews*/
+.reviews-container {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px; /* Добавить отступы! */
+  box-sizing: border-box;
+  margin-bottom: 160px;
+  display: flex;
+  gap: 80px;
+}
+
+.quote-sign {
+  position: absolute;
+  width: 386px;
+  height: 493px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-image: url(/public/img/reviews_img/right-quote-sign.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Заголовок секции отзывов */
+.reviews-title {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+/* Блок с отзывами */
+.reviews-block {
+  display: flex;
+  justify-content: center;
+}
+
+/* Контейнер слайдера отзывов */
+.reviews-slider_container {
+  margin: 0 auto;
+  max-width: 980px;
+  min-height: 416px;
+  display: flex;
+  padding: 80px 80px 88px 128px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 4px 60px 0 rgba(161, 161, 161, 0.25);
+  background: var(--white);
+  gap: 60px;
+}
+
+/* Блок описания отзыва */
+.reviews-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Логотип компании в отзыве */
+.reviews-logo {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+/* Заголовок отзыва */
+.reviews {
+  margin-bottom: 28px;
+  background-size: contain;
+}
+
+/* Подзаголовок отзыва */
+.reviews-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Вертикальный разделитель между отзывами */
+.separator {
+  min-width: 1px;
+  min-height: 100%;
+  background-color: #e0e0e0;
+}
+
+/* Блок со стрелками навигации */
+.reviews-controls {
+  display: flex;
+  align-items: center;
+}
+
+/* Левая стрелка */
+.reviews-arrow_left,
+.reviews-arrow_right {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  gap: 50px;
+}
+
+/* Стиль левой стрелки */
+.reviews-arrow_left {
+  background-image: url(/public/img/reviews_img/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Стиль правой стрелки */
+.reviews-arrow_right {
+  background-image: url(/public/img/reviews_img/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Стиль иконки левой стрелки */
+.reviews-arrow_left::before {
+  transform: rotate(90deg);
+  margin-right: 5px;
+}
+
+/* Стиль иконки правой стрелки */
+.reviews-arrow_right::after {
+  transform: rotate(-90deg);
+  margin-left: 5px;
+}
+
+/* Счётчик стрелок навигации */
+.left-arrow_count,
+.right-arrow_count {
+  margin: 0 15px;
+  font-size: 16px;
+}
