@@ -65,9 +65,10 @@ const Modal = ({ isOpen = false, onClose, triggerRect }) => {
   }, [isOpen]);
 
   return (
+    
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-        <button className={styles.closeButton} onClick={onClose}>
+        <button className={styles.closeButton} style={{position: 'absolute'}} onClick={onClose}>
           &times;
         </button>
         <div className={styles.formaContainer} style={containerStyle}>
