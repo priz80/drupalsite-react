@@ -1015,3 +1015,694 @@ h2 {
   gap: 20px;
 }
 }
+
+
+
+/* Секция дедлайнов deadline */
+#deadline {
+    margin-bottom: 160px;
+}
+
+/* Заголовок секции дедлайнов */
+.deadline-title {
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Выделенный текст в элементе дедлайна */
+.deadline-item_text span {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+
+/* Секция команды team*/
+#team {
+  margin-bottom: 160px;
+}
+
+/* Заголовок секции команды */
+.team-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* Блок с карточками команды */
+.team-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 120px;
+}
+
+/* Карточка одного члена команды */
+.team-tile {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+/* Изображение члена команды */
+.team-image {
+  margin-bottom: 20px;
+}
+
+/* Выделенный текст в описании */
+.team-description span {
+  font-weight: 700;
+}
+
+/* Кнопка в секции команды */
+.team-button {
+  width: 260px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+/* Текст на кнопке в секции команды */
+.team-button span {
+  font-size: 12px;
+  color: var(--main-black);
+}
+
+
+/* Секция кейсов cases*/
+#cases {
+  margin-bottom: 160px;
+}
+
+/* Заголовок секции кейсов */
+.cases-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Блок с карточками кейсов */
+.cases-tile_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Карточка стандартного кейса */
+.cases-tile {
+  width: 380px;
+  min-height: 475px;
+}
+
+/* Карточка большого кейса */
+.cases-tile_large {
+  width: 780px;
+  min-height: 475px;
+}
+
+/* Изображение в карточке кейса */
+.cases-tile_img {
+  width: 380px;
+  min-height: 215px;
+}
+
+/* Фоновое изображение для карточки */
+.image-block {
+  background-image: url(/public/img/cases_img/image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Карточка большого кейса */
+.cases-tile_large {
+  background-image: url(/public/img/cases_img/imagebig.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Фоновое изображение для блока изображений */
+.images-block {
+  background-image: url(/public/img/cases_img/images.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Фоновое изображение для вертикального блока */
+.imagev-block {
+  background-image: url(/public/img/cases_img/imagev.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Фоновое изображение для блока с изображением */
+.img-block {
+  background-image: url(/public/img/cases_img/img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1280px) {
+  /* Карточка стандартного кейса */
+.cases-tile {
+    width: 100%;
+    min-height: 475px;
+  }
+  /* Изображение в карточке кейса */
+.cases-tile_img {
+    width: 100%;
+  }
+  /* Карточка большого кейса */
+.cases-tile_large {
+  width: 100%;
+}
+}
+
+
+
+/* Секция отзывов reviews*/
+#reviews {
+  position: relative;
+  margin-bottom: 160px;
+}
+
+.quote-sign {
+  position: absolute;
+  width: 386px;
+  height: 493px;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background-image: url(/public/img/reviews_img/right-quote-sign.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Заголовок секции отзывов */
+.reviews-title {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+/* Блок с отзывами */
+.reviews-block {
+  display: flex;
+  justify-content: center;
+}
+
+/* Контейнер слайдера отзывов */
+.reviews-slider_container {
+  margin: 0 auto;
+  max-width: 980px;
+  min-height: 416px;
+  display: flex;
+  padding: 80px 80px 88px 128px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 4px 60px 0 rgba(161, 161, 161, 0.25);
+  background: var(--white);
+  gap: 60px;
+}
+
+/* Блок описания отзыва */
+.reviews-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Логотип компании в отзыве */
+.reviews-logo {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+/* Заголовок отзыва */
+.reviews {
+  margin-bottom: 28px;
+  background-size: contain;
+}
+
+/* Подзаголовок отзыва */
+.reviews-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Вертикальный разделитель между отзывами */
+.separator {
+  min-width: 1px;
+  min-height: 100%;
+  background-color: #e0e0e0;
+}
+
+/* Блок со стрелками навигации */
+.reviews-arrow {
+  display: flex;
+  align-items: center;
+}
+
+/* Левая стрелка */
+.reviews-arrow_left,
+.reviews-arrow_right {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Стиль левой стрелки */
+.reviews-arrow_left {
+  background-image: url(/public/img/reviews_img/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Стиль правой стрелки */
+.reviews-arrow_right {
+  background-image: url(/public/img/reviews_img/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Стиль иконки левой стрелки */
+.reviews-arrow_left::before {
+  transform: rotate(90deg);
+  margin-right: 5px;
+}
+
+/* Стиль иконки правой стрелки */
+.reviews-arrow_right::after {
+  transform: rotate(-90deg);
+  margin-left: 5px;
+}
+
+/* Счётчик стрелок навигации */
+.left-arrow_count,
+.right-arrow_count {
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+
+
+
+/* Секция партнеров partners*/
+#partners {
+  margin-bottom: 160px;
+}
+
+/* Заголовок секции партнеров */
+.partners-title {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* Описание под заголовком партнеров */
+.partners-title p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  text-align: center;
+  color: var(--main-black);
+  opacity: 0.7;
+  margin-top: 10px;
+  margin-bottom: 42px;
+}
+
+/* Блок с логотипами партнеров */
+.partners-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Контейнер слайдера партнеров */
+.partners-slider_container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Элемент слайдера партнера */
+.partners-slider_item {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  min-width: 291px;
+  min-height: 155px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+/* Трек слайдера, движущийся влево */
+.slider-track_left {
+  display: flex;
+  animation: slide_left 30s linear infinite;
+}
+
+/* Анимация движения слайдера влево */
+@keyframes slide_left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Трек слайдера, движущийся вправо */
+.slider-track_right {
+  display: flex;
+  animation: slide_right 30s linear infinite;
+}
+
+/* Анимация движения слайдера вправо */
+@keyframes slide_right {
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+/* Секция часто задаваемых вопросов FAQ*/
+#faq {
+  margin-bottom: 160px;
+}
+
+/* Список вопросов */
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Элемент вопроса */
+.faq-item {
+  padding-left: 15px;
+}
+
+/* Активный (открытый) вопрос */
+.faq-active {
+  border: 3px solid;
+  border-color: var(--icons-1);
+  padding-left: 12px;
+  color: var();
+}
+
+/* Вопрос (заголовок FAQ) */
+.faq-question {
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Номер вопроса */
+.faq-num {
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.5;
+  padding-right: 10px;
+}
+
+/* Ответ на вопрос */
+.faq-answer {
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  color: var(--main-black);
+  opacity: 0.5;
+}
+
+/* Заголовок секции FAQ */
+.faq-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+
+
+
+
+/* Секция контактов contacty*/
+#contacty {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-height: 816px;
+  background-color: #040613;
+  background-image: linear-gradient(
+    233deg,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0.28) 100%
+  );
+  background-blend-mode: overlay;
+  overflow: hidden;
+}
+
+/* Контейнер для содержимого секции контактов */
+.contacty-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 117px;
+  margin-bottom: 110px;
+  gap: 160px;
+}
+
+/* Блок с информацией о контактах */
+.contacty {
+  width: 100%;
+  max-width: 480px;
+  min-height: 439px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Заголовок в блоке контактов */
+.contacty-title h2 {
+  color: var(--white);
+  margin-bottom: 19px;
+}
+
+/* Описание в блоке контактов */
+.contacty-title > p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 157%;
+  color: var(--white);
+  /* margin-bottom: 142px; */
+}
+
+/* Блок с номером телефона */
+.tel {
+  width: 305px;
+  height: 48px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Иконка телефона */
+.tel img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Текст номера телефона */
+.tel p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--white);
+}
+
+/* Блок с электронной почтой */
+.email {
+  width: 247px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Иконка электронной почты */
+.email img {
+  width: 28px;
+  height: 24px;
+}
+
+/* Ссылка на электронную почту */
+.email p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+}
+
+/* Контейнер формы обратной связи */
+.forma-container {
+  width: 100%;
+  max-width: 480px;
+  min-height: 480px;
+}
+
+/* Форма обратной связи */
+.forma {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* Поле ввода формы */
+.input-area {
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 478px;
+  height: 68px;
+  opacity: 0.3;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--white);
+}
+
+/* Подсказка в поле ввода */
+.input-area::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--white);
+  padding-left: 24px;
+}
+
+/* Текстовое поле формы */
+.text-area {
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 478px;
+  height: 128px;
+  opacity: 0.3;
+  background-color: transparent;
+}
+
+/* Подсказка в текстовом поле */
+.text-area::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--white);
+  padding-left: 24px;
+  padding-top: 26px;
+}
+
+/* Блок согласия с политикой */
+.agreement {
+  display: flex;
+  gap: 13px;
+  margin-top: 8px;
+  margin-bottom: 13px;
+}
+
+/* Метка согласия */
+.agreement label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--white);
+}
+
+/* Чекбокс согласия */
+.checkbox {
+  border: 2px solid var(--white);
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+}
+
+/* Кнопка отправки формы */
+.forma-button {
+  max-width: 480px;
+}
+
+/* Летающая D-иконка */
+.contacty-img {
+  position: absolute;
+  width: 290px;
+  height: 230px;
+  background-image: url(/public/img/contacty_img/D-flying.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 386px;
+  top: 0;
+}
+
+/* Большая D-иконка */
+.contacty-image {
+  position: absolute;
+  width: 456px;
+  height: 195px;
+  background-image: url(/public/img/contacty_img/D.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: -28px;
+  bottom: 0;
+}
+
+/* Адаптивность: изменения для мобильных устройств */
+@media (max-width: 1100px) {
+  /* Контейнер для содержимого секции контактов */
+  .contacty-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  /* Блок контактов и форма — на всю ширину */
+  .contacty,
+  .forma-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Поля и кнопка — на всю ширину */
+  .input-area,
+  .text-area,
+  .forma-button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Скрываем декоративные элементы на мобильных */
+  .contacty-img,
+  .contacty-image {
+    display: none;
+  }
+}
