@@ -413,6 +413,39 @@ h2 {
   color: var(--icons-1);
 }
 
+
+/* === БУРГЕР-КНОПКА === */
+.burger-mobile {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 20;
+  background-color: #111;
+}
+
+.burger-mobile span {
+  width: 25px;
+  height: 3px;
+  background: var(--white);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Анимация: бургер → крестик */
+.burger-mobile.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+.burger-mobile.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-mobile.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
 /* === АДАПТИВ (до 1100px) === */
 @media (max-width: 1100px) {
   /* Показываем бургер */
@@ -470,37 +503,6 @@ h2 {
   background-size: 100% 100%;
 }
 
-
-/* === БУРГЕР-КНОПКА === */
-.burger-mobile {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  z-index: 20;
-  background-color: #111;
-}
-
-.burger-mobile span {
-  width: 25px;
-  height: 3px;
-  background: var(--white);
-  margin: 3px 0;
-  transition: 0.3s;
-  border-radius: 2px;
-}
-
-/* Анимация: бургер → крестик */
-.burger-mobile.active span:nth-child(1) {
-  transform: rotate(-45deg) translate(-7px, 8px);
-}
-
-.burger-mobile.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-mobile.active span:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
 
 
 /* Заголовок секции services */
@@ -947,6 +949,7 @@ h2 {
   text-align: center;
   color: var(--main-black);
   opacity: 0.5;
+  cursor: pointer;
 }
 
 /* Блок кнопки "взять тариф" */
@@ -958,6 +961,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 /* Ссылка внутри кнопки "взять тариф" */
@@ -972,6 +976,7 @@ h2 {
   text-decoration-skip-ink: none;
   text-align: center;
   color: var(--main-black);
+  cursor: pointer;
 }
 
 /* Блок с карточками тарифов */
@@ -1178,136 +1183,6 @@ h2 {
 
 
 
-/* Секция отзывов reviews*/
-#reviews {
-  position: relative;
-  margin-bottom: 160px;
-}
-
-.quote-sign {
-  position: absolute;
-  width: 386px;
-  height: 493px;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  background-image: url(/public/img/reviews_img/right-quote-sign.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* Заголовок секции отзывов */
-.reviews-title {
-  text-align: center;
-  margin-bottom: 46px;
-}
-
-/* Блок с отзывами */
-.reviews-block {
-  display: flex;
-  justify-content: center;
-}
-
-/* Контейнер слайдера отзывов */
-.reviews-slider_container {
-  margin: 0 auto;
-  max-width: 980px;
-  min-height: 416px;
-  display: flex;
-  padding: 80px 80px 88px 128px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  box-shadow: 0 4px 60px 0 rgba(161, 161, 161, 0.25);
-  background: var(--white);
-  gap: 60px;
-}
-
-/* Блок описания отзыва */
-.reviews-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Логотип компании в отзыве */
-.reviews-logo {
-  width: 100px;
-  height: 50px;
-  margin-bottom: 40px;
-}
-
-/* Заголовок отзыва */
-.reviews {
-  margin-bottom: 28px;
-  background-size: contain;
-}
-
-/* Подзаголовок отзыва */
-.reviews-subtitle {
-  font-size: 14px;
-  color: #666;
-}
-
-/* Вертикальный разделитель между отзывами */
-.separator {
-  min-width: 1px;
-  min-height: 100%;
-  background-color: #e0e0e0;
-}
-
-/* Блок со стрелками навигации */
-.reviews-arrow {
-  display: flex;
-  align-items: center;
-}
-
-/* Левая стрелка */
-.reviews-arrow_left,
-.reviews-arrow_right {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-/* Стиль левой стрелки */
-.reviews-arrow_left {
-  background-image: url(/public/img/reviews_img/arrow-left.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Стиль правой стрелки */
-.reviews-arrow_right {
-  background-image: url(/public/img/reviews_img/arrow-right.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* Стиль иконки левой стрелки */
-.reviews-arrow_left::before {
-  transform: rotate(90deg);
-  margin-right: 5px;
-}
-
-/* Стиль иконки правой стрелки */
-.reviews-arrow_right::after {
-  transform: rotate(-90deg);
-  margin-left: 5px;
-}
-
-/* Счётчик стрелок навигации */
-.left-arrow_count,
-.right-arrow_count {
-  margin: 0 15px;
-  font-size: 16px;
-}
-
-
-
-
 /* Секция партнеров partners*/
 #partners {
   margin-bottom: 160px;
@@ -1391,65 +1266,6 @@ h2 {
   0% {
     transform: translateX(-100%);
   }
-}
-
-
-
-/* Секция часто задаваемых вопросов FAQ*/
-#faq {
-  margin-bottom: 160px;
-}
-
-/* Список вопросов */
-.faq-list {
-  list-style: none;
-  padding: 0;
-}
-
-/* Элемент вопроса */
-.faq-item {
-  padding-left: 15px;
-}
-
-/* Активный (открытый) вопрос */
-.faq-active {
-  border: 3px solid;
-  border-color: var(--icons-1);
-  padding-left: 12px;
-  color: var();
-}
-
-/* Вопрос (заголовок FAQ) */
-.faq-question {
-  cursor: pointer;
-  margin: 0;
-}
-
-/* Номер вопроса */
-.faq-num {
-  font-weight: 700;
-  font-size: 14px;
-  opacity: 0.5;
-  padding-right: 10px;
-}
-
-/* Ответ на вопрос */
-.faq-answer {
-  padding-bottom: 15px;
-  padding-left: 15px;
-  margin: 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 137%;
-  color: var(--main-black);
-  opacity: 0.5;
-}
-
-/* Заголовок секции FAQ */
-.faq-title {
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 60px;
 }
 
 
