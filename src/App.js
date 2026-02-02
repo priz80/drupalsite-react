@@ -1,6 +1,8 @@
 import "./App.css";
 import Modal from './components/Modal';
 import { useState } from 'react';
+import Reviews from './components/Reviews';
+import Faq from './components/Faq';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -635,7 +637,7 @@ function App() {
           </a>
         </div>
       </div>
-    </section>
+        </section>
 
         <section id="deadline">
       <div className="container">
@@ -671,385 +673,281 @@ function App() {
           </div>
         </div>
       </div>
-    </section>
+        </section>
 
         <section id="team">
-      <div className="container">
-        <div className="team-title">
-          <h2>Команда</h2>
-        </div>
-        <div className="team-block">
-          <div className="team-tile">
-            <div className="team-image">
-              <img src="./img/team_img/IMG_2472_0.jpg" alt="Член команды" />
+          <div className="container">
+            <div className="team-title">
+              <h2>Команда</h2>
             </div>
-            <div className="team-description">
-              <span>Сергей Синица</span>
-              <p>Руководитель отдела веб-разработки, канд. техн. наук, заместитель директора</p>
-            </div>
-          </div>
-          <div className="team-tile">
-            <div className="team-image">
-              <img src="./img/team_img/IMG_2539_0.jpg" alt="Член команды" />
-            </div>
-            <div className="team-description">
-                <span>Роман Агабеков</span>
-                <p>Руководитель отдела DevOps, директор</p>
+            <div className="team-block">
+              <div className="team-tile">
+                <div className="team-image">
+                  <img src="./img/team_img/IMG_2472_0.jpg" alt="Член команды" />
+                </div>
+                <div className="team-description">
+                  <span>Сергей Синица</span>
+                  <p>Руководитель отдела веб-разработки, канд. техн. наук, заместитель директора</p>
+                </div>
               </div>
-          </div>
-          <div className="team-tile">
-            <div className="team-image">
-              <img src="./img/team_img/IMG_2474_1.jpg" alt="Член команды" />
-            </div>
-            <div className="team-description">
-                <span>Алексей Синица</span>
-                <p>Руководитель отдела поддержки сайтов</p>
+              <div className="team-tile">
+                <div className="team-image">
+                  <img src="./img/team_img/IMG_2539_0.jpg" alt="Член команды" />
+                </div>
+                <div className="team-description">
+                    <span>Роман Агабеков</span>
+                    <p>Руководитель отдела DevOps, директор</p>
+                  </div>
               </div>
-          </div>
-          <div className="team-tile">
-            <div className="team-image">
-              <img src="./img/team_img/IMG_2522_0.jpg" alt="Член команды" />
-            </div>
-            <div className="team-description">
-                <span>Дарья Бочкарева</span>
-                <p>Руководитель отдела продвижения, контекстной рекламы и контент-поддержки сайтов</p>
+              <div className="team-tile">
+                <div className="team-image">
+                  <img src="./img/team_img/IMG_2474_1.jpg" alt="Член команды" />
+                </div>
+                <div className="team-description">
+                    <span>Алексей Синица</span>
+                    <p>Руководитель отдела поддержки сайтов</p>
+                  </div>
               </div>
-          </div>
-          <div className="team-tile">
-            <div className="team-image">
-              <img src="./img/team_img/IMG_9971_16.jpg" alt="Член команды" />
-            </div>
-            <div className="team-description">
-                <span>Ирина Торкунова</span>
-                <p>Менеджер по работе с клиентами</p>
+              <div className="team-tile">
+                <div className="team-image">
+                  <img src="./img/team_img/IMG_2522_0.jpg" alt="Член команды" />
+                </div>
+                <div className="team-description">
+                    <span>Дарья Бочкарева</span>
+                    <p>Руководитель отдела продвижения, контекстной рекламы и контент-поддержки сайтов</p>
+                  </div>
               </div>
+              <div className="team-tile">
+                <div className="team-image">
+                  <img src="./img/team_img/IMG_9971_16.jpg" alt="Член команды" />
+                </div>
+                <div className="team-description">
+                    <span>Ирина Торкунова</span>
+                    <p>Менеджер по работе с клиентами</p>
+                  </div>
+              </div>
+              
+            </div>
+            <button type="button" className="button team-button"><span>Вся команда</span></button>
           </div>
-          
-        </div>
-        <button type="button" className="button team-button"><span>Вся команда</span></button>
-      </div>
-    </section>
+        </section>
 
         <section id="cases">
-      <div className="container">
-        <div className="cases-title">
-          <h2>Последние кейсы</h2>
-        </div>
-        <div className="cases-tile_block">
-          <div className="cases-tile">
-            <div className="cases-tile_img image-block">
+          <div className="container">
+            <div className="cases-title">
+              <h2>Последние кейсы</h2>
             </div>
-            
-            <h3 className="cases-title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+            <div className="cases-tile_block">
+              <div className="cases-tile">
+                <div className="cases-tile_img image-block">
+                </div>
+                
+                <h3 className="cases-title">Настройка выгрузки YML для Яндекс.Маркета</h3>
 
-            <p className="cases-title_data">22.04.2019</p>
-            <p className="cases-title_subitle">
-              Эти слова совершенно справедливы, однако гипнотический рифф
-              продолжает паузный пласт.
-            </p>
-          </div>
-          <div className="cases-tile_large"></div>
-        </div>
-        <div className="cases-tile_block">
-          <div className="cases-tile images-block"></div>
-          <div className="cases-tile imagev-block"></div>
-          <div className="cases-tile">
-            <div className="cases-tile_img img-block">
+                <p className="cases-title_data">22.04.2019</p>
+                <p className="cases-title_subitle">
+                  Эти слова совершенно справедливы, однако гипнотический рифф
+                  продолжает паузный пласт.
+                </p>
+              </div>
+              <div className="cases-tile_large"></div>
             </div>
-            
-            <h3 className="cases-title">Настройка выгрузки YML для Яндекс.Маркета</h3>
+            <div className="cases-tile_block">
+              <div className="cases-tile images-block"></div>
+              <div className="cases-tile imagev-block"></div>
+              <div className="cases-tile">
+                <div className="cases-tile_img img-block">
+                </div>
+                
+                <h3 className="cases-title">Настройка выгрузки YML для Яндекс.Маркета</h3>
 
-            <p className="cases-title_data">22.04.2019</p>
-            <p className="cases-title_subitle">
-              Эти слова совершенно справедливы, однако гипнотический рифф
-              продолжает паузный пласт.
-            </p>
+                <p className="cases-title_data">22.04.2019</p>
+                <p className="cases-title_subitle">
+                  Эти слова совершенно справедливы, однако гипнотический рифф
+                  продолжает паузный пласт.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-        <section id="reviews">
-      <div className="quote-sign"></div>
-      <div className="container">
-        <div className="reviews-title">
-          <h2>Отзывы</h2>
-        </div>
-        <div className="reviews-slider_container">
-          <div className="reviews-description">
-            <div className="reviews-logo"></div>
-            <div className="reviews"></div>
-            <div className="reviews-subtitle"></div>
-            <div className="reviews-signature"></div>
-          </div>
-          <div className="separator"></div>
-          <div className="reviews-arrow">
-            <div className="reviews-arrow_left"></div>
-            <div className="left-arrow_count"></div>
-            <div className="slash-arrow_count">/</div>
-            <div className="right-arrow_count"></div>
-            <div className="reviews-arrow_right"></div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <Reviews />
 
         <section id="partners">
-      <div className="container">
-        <div className="partners-title">
-          <h2>С нами работают</h2>
-          <p>
-            Десятки компаний доверяют нам самое ценное, что у них есть в
-            интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество
-            было долгим.
-          </p>
-        </div>
-      </div>
-        <div className="partners-slider_container">
-          <div className="slider-track_left">
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-          </div>
-          <div className="slider-track_left">
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-          </div>
-          <div className="slider-track_left">
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-          </div>
-          <div className="slider-track_left">
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-          </div>
-        </div>
-        <div className="partners-slider_container">
-          <div className="slider-track_right">
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-          </div>
-          <div className="slider-track_right">
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-          </div>
-          <div className="slider-track_right">
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-          </div>
-          <div className="slider-track_right">
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
-          </div>
-        </div>
-    </section>
-
-        <section id="faq">
-      <div className="container">
-        <div className="faq-title">
-          <h2>faq</h2>
-        </div>
-        <ul className="faq-list">
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">1.</span>Кто неопсредственно занимается поддержкой?</h3></div>
-             <div className="faq-answer" /* style="display: none;" */>
-              <p>Сайты поддерживают штатные сотрудники "ИНИТЛАБ", г.Краснодар, прошедшие специальное обучение и имеющие опыт работы с Друпал, от 4 до 15 лет. 8 web-разработчика, 2 специалиста по SEO, 4 системных администратора.</p>
+            <div className="container">
+              <div className="partners-title">
+                <h2>С нами работают</h2>
+                <p>
+                  Десятки компаний доверяют нам самое ценное, что у них есть в
+                  интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество
+                  было долгим.
+                </p>
+              </div>
             </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">2.</span>Как организована работа поддержки?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
+            <div className="partners-slider_container">
+              <div className="slider-track_left">
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+              </div>
+              <div className="slider-track_left">
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+              </div>
+              <div className="slider-track_left">
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+              </div>
+              <div className="slider-track_left">
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+              </div>
             </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">3.</span>Что происходит, когда отработаны все преоплаченные часы за месяц?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
+            <div className="partners-slider_container">
+              <div className="slider-track_right">
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+              </div>
+              <div className="slider-track_right">
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+              </div>
+              <div className="slider-track_right">
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+              </div>
+              <div className="slider-track_right">
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+              </div>
             </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">4.</span>Что происходит, когда не отработаны все преоплаченные часы за месяц?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">5.</span>Как происходит оценка и согласование планируемого времени на выполнение заявок?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">6.</span>Сколько программистов выделяется на прект?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">7.</span>Как подать заявку на внесение изменений на сайте?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">8.</span>Как подать заявку на добавление пользователя, изменение настроек веб-сервера и других задач по администрированию?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">9.</span>В течении какого времени начинается работа по заявке?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">10.</span>В какое время работает техподдержка?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">11.</span>Подходят ли услуги поддержки, если необходимо произвести обновление ядра Drupal или модулей?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          <li className="faq-item">
-            <div className="faq-question"><h3><span className="faq-num">12.</span>Можно ли пообщаться со специалистом голосом или в мессенджере?</h3></div>
-            <div className="faq-answer" /* style="display: none;" */>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
-            </div>
-          </li>
-          
-        </ul>
-      </div>
-    </section>
+        </section>
+        
+          <Faq />
 
         <section id="contacty">
-      <div className="contacty-image"></div>
-      <div className="container">
-        <div className="contacty-container">
-          <div className="contacty-img"></div>
-          <div className="contacty">
-            <div className="contacty-title">
-              <h2>Оставить заявку на поддержку сайта</h2>
-              <p>
-                Срочно нужна поддержка сайта? Ваша команда не успевает
-                справиться самостоятельно или предыдущий подрядчик не справился
-                с работой? Тогда вам точно к нам! Просто оставьте заявку и наш
-                менеджер с вами свяжется!
-              </p>
-            </div>
-            <div className="contacty-subtitle">
-              <div className="tel">
-                <img src="./img/contacty_img/phone-line.svg" alt="Телефон" />
-                <p>8 800 222-26-73</p>
+          <div className="contacty-image"></div>
+          <div className="container">
+            <div className="contacty-container">
+              <div className="contacty-img"></div>
+              <div className="contacty">
+                <div className="contacty-title">
+                  <h2>Оставить заявку на поддержку сайта</h2>
+                  <p>
+                    Срочно нужна поддержка сайта? Ваша команда не успевает
+                    справиться самостоятельно или предыдущий подрядчик не справился
+                    с работой? Тогда вам точно к нам! Просто оставьте заявку и наш
+                    менеджер с вами свяжется!
+                  </p>
+                </div>
+                <div className="contacty-subtitle">
+                  <div className="tel">
+                    <img src="./img/contacty_img/phone-line.svg" alt="Телефон" />
+                    <p>8 800 222-26-73</p>
+                  </div>
+                  <div className="email">
+                    <img src="./img/contacty_img/mail.svg" alt="Email" />
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                  </div>
+                </div>
               </div>
-              <div className="email">
-                <img src="./img/contacty_img/mail.svg" alt="Email" />
-                <p><a href="mailto:info@example.com">info@example.com</a></p>
-              </div>
-            </div>
-          </div>
-          <div className="forma-container">
-            <form className="forma" action="#" method="post">
-              <input
-                type="text"
-                name="name"
-                placeholder="Ваше имя"
-                required
-                className="input-area"
-                aria-label="Ваше имя"
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Телефон"
-                required
-                className="input-area"
-                aria-label="Телефон"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-                className="input-area"
-                aria-label="Email"
-              />
-              <textarea
-                name="comment"
-                placeholder="Ваш комментарий"
-                className="text-area"
-                aria-label="Ваш комментарий"
-              ></textarea>
+              <div className="forma-container">
+                <form className="forma" action="#" method="post">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя"
+                    required
+                    className="input-area"
+                    aria-label="Ваше имя"
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Телефон"
+                    required
+                    className="input-area"
+                    aria-label="Телефон"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    className="input-area"
+                    aria-label="Email"
+                  />
+                  <textarea
+                    name="comment"
+                    placeholder="Ваш комментарий"
+                    className="text-area"
+                    aria-label="Ваш комментарий"
+                  ></textarea>
 
-              <div className="agreement">
-                <input
-                  type="checkbox"
-                  name="agreement"
-                  id="agreement"
-                  className="checkbox"
-                  required
-                />
-                <label htmlFor="agreement">
-                  Отправляя заявку, я даю согласие на обработку своих
-                  персональных данных
-                </label>
+                  <div className="agreement">
+                    <input
+                      type="checkbox"
+                      name="agreement"
+                      id="agreement"
+                      className="checkbox"
+                      required
+                    />
+                    <label htmlFor="agreement">
+                      Отправляя заявку, я даю согласие на обработку своих
+                      персональных данных
+                    </label>
+                  </div>
+                  <button type="submit" className="button forma-button">
+                    Оставить заявку
+                  </button>
+                </form>
               </div>
-              <button type="submit" className="button forma-button">
-                Оставить заявку
-              </button>
-            </form>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="line-footer"></div>
-      <footer id="footer">
-        <div className="container">
-          <div className="footer-container">
-            <p>Проект ООО «Инитлаб», Краснодар, Россия.</p>
-            <p>
-              Drupal является зарегистрированной торговой маркой Dries
-              Buytaert.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </section>
+          <div className="line-footer"></div>
+          <footer id="footer">
+            <div className="container">
+              <div className="footer-container">
+                <p>Проект ООО «Инитлаб», Краснодар, Россия.</p>
+                <p>
+                  Drupal является зарегистрированной торговой маркой Dries
+                  Buytaert.
+                </p>
+              </div>
+            </div>
+          </footer>
+        </section>
       </main>
     </div>
 
