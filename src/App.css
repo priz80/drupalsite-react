@@ -1522,3 +1522,32 @@ h2 {
     display: none;
   }
 }
+
+
+/* Основной футер */
+#footer {
+    max-height: 150px;
+    padding-top: 56px;
+  padding-bottom: 54px;
+}
+
+/* Контейнер для содержимого футера */
+.footer-container {
+  width: 522px;
+  height: 40px;
+}
+
+/* Текст в футере */
+.footer-container p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+
+/* Линия-разделитель в футере */
+.line-footer {
+  border: 1px solid var(--white);
+}
