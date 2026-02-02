@@ -7,6 +7,7 @@ function App() {
   const [triggerRect, setTriggerRect] = useState(null);
   return (
     <div className="App.css">
+      
       {isModalOpen && <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
       <header className="header">
         {/* <video autoPlay muted loop playsInline>
@@ -1024,7 +1025,7 @@ function App() {
                   className="checkbox"
                   required
                 />
-                <label for="agreement">
+                <label htmlFor="agreement">
                   Отправляя заявку, я даю согласие на обработку своих
                   персональных данных
                 </label>
