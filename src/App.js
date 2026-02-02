@@ -1,8 +1,13 @@
 import "./App.css";
+import Modal from './components/Modal';
+import { useState } from 'react';
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [triggerRect, setTriggerRect] = useState(null);
   return (
     <div className="App.css">
+      {isModalOpen && <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
       <header className="header">
         {/* <video autoPlay muted loop playsInline>
       <source src="/video/video.mp4" type="video/mp4" />
@@ -232,6 +237,7 @@ function App() {
       </header>
 
       <main>
+        
         <section id="services">
           <div className="container">
             <div className="services-title">
@@ -547,12 +553,13 @@ function App() {
                     </li>
                   </ul>
                 </div>
-                <a
-                  href="#contacty"
+                <button
+                  type="button"
                   className="button plans-button plans-button_style"
+                  onClick={(e) => { const rect = e.currentTarget.getBoundingClientRect(); setTriggerRect(rect); setIsModalOpen(true); }}
                 >
                   Свяжитесь с нами
-                </a>
+                </button>
               </div>
             </div>
             
@@ -574,12 +581,13 @@ function App() {
                     </li>
                   </ul>
                 </div>
-                <a
-                  href="#contacty"
+                <button
+                  type="button"
                   className="button plans-button plans-button_style"
+                  onClick={(e) => { const rect = e.currentTarget.getBoundingClientRect(); setTriggerRect(rect); setIsModalOpen(true); }}
                 >
                   Свяжитесь с нами
-                </a>
+                </button>
               </div>
             </div>
             
@@ -601,12 +609,13 @@ function App() {
                     </li>
                   </ul>
                 </div>
-                <a
-                  href="#contacty"
+                <button
+                  type="button"
                   className="button plans-button plans-button_style"
+                  onClick={(e) => { const rect = e.currentTarget.getBoundingClientRect(); setTriggerRect(rect); setIsModalOpen(true); }}
                 >
                   Свяжитесь с нами
-                </a>
+                </button>
               </div>
             </div>
             
@@ -614,18 +623,20 @@ function App() {
           
           </div>
         <div className="plans-ps">
-          <a href="#contacty">
+          <a onClick={(e) => { const rect = e.currentTarget.getBoundingClientRect(); setTriggerRect(rect); setIsModalOpen(true); }}>
             Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам
             индивидуальные условия!
           </a>
         </div>
         <div className="plans-taketarif">
-          <a href="#contacty">Получить индивидуальный тариф</a>
+          <a onClick={(e) => { const rect = e.currentTarget.getBoundingClientRect(); setTriggerRect(rect); setIsModalOpen(true); }}>
+            Получить индивидуальный тариф
+          </a>
         </div>
       </div>
     </section>
 
-        {/* <section id="deadline">
+        <section id="deadline">
       <div className="container">
         <div className="deadline-title">
           <h2>Наши профессиональные разработчики выполняют быстро любые задачи</h2>
@@ -659,9 +670,9 @@ function App() {
           </div>
         </div>
       </div>
-    </section> */}
+    </section>
 
-        {/* <section id="team">
+        <section id="team">
       <div className="container">
         <div className="team-title">
           <h2>Команда</h2>
@@ -716,9 +727,9 @@ function App() {
         </div>
         <button type="button" className="button team-button"><span>Вся команда</span></button>
       </div>
-    </section> */}
+    </section>
 
-        {/* <section id="cases">
+        <section id="cases">
       <div className="container">
         <div className="cases-title">
           <h2>Последние кейсы</h2>
@@ -755,9 +766,9 @@ function App() {
           </div>
         </div>
       </div>
-    </section> */}
+    </section>
 
-        {/* <section id="reviews">
+        <section id="reviews">
       <div className="quote-sign"></div>
       <div className="container">
         <div className="reviews-title">
@@ -780,9 +791,9 @@ function App() {
           </div>
         </div>
       </div>
-    </section> */}
+    </section>
 
-        {/* <section id="partners">
+        <section id="partners">
       <div className="container">
         <div className="partners-title">
           <h2>С нами работают</h2>
@@ -795,75 +806,75 @@ function App() {
       </div>
         <div className="partners-slider_container">
           <div className="slider-track_left">
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
           </div>
           <div className="slider-track_left">
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
           </div>
           <div className="slider-track_left">
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
           </div>
           <div className="slider-track_left">
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
           </div>
         </div>
         <div className="partners-slider_container">
           <div className="slider-track_right">
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
           </div>
           <div className="slider-track_right">
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
           </div>
           <div className="slider-track_right">
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
           </div>
           <div className="slider-track_right">
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
-            <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt=""></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+            <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
           </div>
         </div>
-    </section> */}
+    </section>
 
-        {/* <section id="faq">
+        <section id="faq">
       <div className="container">
         <div className="faq-title">
           <h2>faq</h2>
@@ -871,87 +882,86 @@ function App() {
         <ul className="faq-list">
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">1.</span>Кто неопсредственно занимается поддержкой?</h3></div>
-             <div className="faq-answer" style="display: none;">
+             <div className="faq-answer" /* style="display: none;" */>
               <p>Сайты поддерживают штатные сотрудники "ИНИТЛАБ", г.Краснодар, прошедшие специальное обучение и имеющие опыт работы с Друпал, от 4 до 15 лет. 8 web-разработчика, 2 специалиста по SEO, 4 системных администратора.</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">2.</span>Как организована работа поддержки?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">3.</span>Что происходит, когда отработаны все преоплаченные часы за месяц?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">4.</span>Что происходит, когда не отработаны все преоплаченные часы за месяц?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">5.</span>Как происходит оценка и согласование планируемого времени на выполнение заявок?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">6.</span>Сколько программистов выделяется на прект?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">7.</span>Как подать заявку на внесение изменений на сайте?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">8.</span>Как подать заявку на добавление пользователя, изменение настроек веб-сервера и других задач по администрированию?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">9.</span>В течении какого времени начинается работа по заявке?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">10.</span>В какое время работает техподдержка?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">11.</span>Подходят ли услуги поддержки, если необходимо произвести обновление ядра Drupal или модулей?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           <li className="faq-item">
             <div className="faq-question"><h3><span className="faq-num">12.</span>Можно ли пообщаться со специалистом голосом или в мессенджере?</h3></div>
-            <div className="faq-answer" style="display: none;">
+            <div className="faq-answer" /* style="display: none;" */>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos facere reprehenderit. Veniam quia accusamus facilis quidem atque, esse sequi modi facere dolorum quae rem magni ut praesentium voluptatibus dignissimos?</p>
             </div>
           </li>
           
         </ul>
       </div>
-    </section> */}
+    </section>
 
-        {/* <section id="contacty">
+        <section id="contacty">
       <div className="contacty-image"></div>
       <div className="container">
         <div className="contacty-container">
           <div className="contacty-img"></div>
-          <!-- <div className="contacty-image"></div> -->
           <div className="contacty">
             <div className="contacty-title">
               <h2>Оставить заявку на поддержку сайта</h2>
@@ -1038,7 +1048,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </section> */}
+    </section>
       </main>
     </div>
   );
