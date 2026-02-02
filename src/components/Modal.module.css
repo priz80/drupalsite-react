@@ -1,9 +1,22 @@
+.container-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
 /* Контейнер формы обратной связи */
 .formaContainer {
   position: absolute;
   top: 50%;
-  left: 45%;
-  /* transform: translate(-50%, -50%); */
+  left: 50%;
+  transform: translate(-50%, -50%);
   /* width: 100%; */
   max-width: 480px;
   min-height: 480px;
@@ -14,6 +27,19 @@
   transition: none; /* Управление через JS */
   z-index: 1;
   background: #000;
+}
+
+/* Кнопка закрытия модального окна */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 100px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
 }
 
 /* Форма обратной связи */
