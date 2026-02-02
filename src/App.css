@@ -1,38 +1,503 @@
-.App {
-  text-align: center;
+/* Стиль для заголовка H1 */
+h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 115%;
+  color: var(--white);
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Стиль для заголовка H2 */
+h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 42px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Стиль для класса .h3 (возможно опечатка, должно быть h3) */
+.h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/* Центрирование контейнера с максимальной шириной */
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; /* Добавить отступы! */
+  box-sizing: border-box;
+}
+
+/* Базовый стиль кнопки: рамка, цвет, размер, выравнивание */
+.button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid var(--icons-1);
+  background: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  height: 60px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Эффект при наведении: заливка красным */
+.button:hover {
+  background: var(--icons-1);
+}
+
+
+/* Основной заголовок страницы */
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 584px;
+  background-image: url(/public/img/header_img/preview.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Псевдоэлемент для затемнения фона */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Чёрный с 50% прозрачностью */
+  z-index: 1; /* Уровень ниже контента, но выше фона */
+  pointer-events: none; /* Чтобы не мешал кликам по контенту */
+}
+
+/* Стили для видео в заголовке */
+.header > video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Контейнер для логотипа druplicon */
+.druplicon {
+  position: absolute;
+}
+
+/* Контент заголовка (текст и кнопка) */
+.header-content {
+  max-width: 487px;
+  z-index: 1;
+  /* margin-left: 58px; */
+}
+
+/* Описание в заголовке */
+.header-content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  color: var(--white);
+  opacity: 0.8;
+  margin-top: 18px;
+}
+
+/* Стили кнопки в заголовке */
+.header-button {
+  max-width: 220px;
+  margin-top: 56px;
+}
+
+/* Блок для размещения контента и промо-элементов */
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Блок с промо-элементами (статистика) */
+.header-promo_block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 26px;
+  width: 100%;
+  max-width: 593px;
+  min-height: 292px;
+  z-index: 1;
+}
+
+/* Один элемент промо-блока (значок + текст) */
+.item-promo {
+  max-width: 180px;
+  height: 80px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Вертикальная линия-разделитель в промо-блоке */
+.vline {
+  min-width: 3px;
+  height: 80px;
+  background-image: url(/public/img/header_img/vline.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: left;
+}
+
+/* Блок для текста промо-элемента */
+.item-block {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Контейнер для иконки (например, кубка) */
+.item-cup {
+  display: flex;
+  margin-top: -15px;
+}
+
+/* Число в промо-элементе */
+.item-num {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--white);
+}
+
+/* Крупное число (например, в статистике) */
+.item-nums {
+  font-size: 48px;
+}
+
+/* Текст под числом в промо-элементе */
+.item-text {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--white);
+  opacity: 0.7;
+}
+
+@media (max-width: 1100px) {
+  /* Основной заголовок страницы */
+  .header {
+    min-height: 292px;
+  }
+
+  .druplicon img {
+    display: none;
+  }
+
+  /* Один элемент промо-блока (значок + текст) */
+  .item-promo {
+    max-width: 160px;
+  }
+
+  /* Блок для размещения контента и промо-элементов */
+  .header-block {
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  /* Контент заголовка (текст и кнопка) */
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+
+/* === ОСНОВНОЕ МЕНЮ (десктоп) === */
+/* Контейнер для основного меню: расположение и отступы */
+.container-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 66px;
+  padding-top: 25px;
+}
+
+/* Контейнер для логотипа */
+.logo {
+  z-index: 10;
+}
+
+.dropdown-menu {
+  z-index: 10;
+}
+
+/* Горизонтальное меню: элементы в строку */
+.dropdown-menu > ul {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+
+/* Позиционирование для эффектов */
+.dropdown-menu a {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 83%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* === ВЫПАДАЮЩИЕ МЕНЮ (десктоп) === */
+/* Выпадающее меню: скрыто по умолчанию */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  background: #f14d34;
+  width: 220px;
+  margin-top: 5px;
+  padding: 10px 0;
+  border-radius: 0 0 6px 6px;
+}
+
+/* Элементы выпадающего меню */
+.dropdown-content li {
+  padding: 10px 20px;
+  padding-left: 20px;
+  white-space: nowrap;
+}
+
+/* Показ выпадающего меню при наведении */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Позиционирование для эффектов */
+.dropdown-menu a {
+  position: relative;
+  overflow: hidden;
+}
+.dropdown-content li:hover {
+  background-color: #a83c2b;
+}
+
+.under-line a:hover {
+  border-bottom: 3px solid #f14d34;
+}
+
+.dropdown-menu li a {
+  padding-bottom: 5px;
+}
+
+/* === АДАПТИВ: МЕНЮ ВНИЗУ ЭКРАНА (до 1100px) === */
+@media (max-width: 1100px) {
+  /* Скрываем десктопное меню */
+  .desktop-menu .dropdown-menu {
+    display: none;
+  }
+
+  /* Логотип — маленький */
+  .logo img {
+    height: 24px; /* уменьшаем лого */
+  }
+
+  /* Отступ сверху у header, чтобы контент не скрывался под фиксированной панелью */
+  header {
+    padding-bottom: 60px; /* место для фиксированного меню */
+  }
+}
+
+
+/* === МОБИЛЬНОЕ МЕНЮ (адаптивное) === */
+ /* Мобильное меню: скрыто по умолчанию */
+  .mobile-menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    max-height: calc(100vh - 53px);
+    /* min-height: 100vh; */
+    overflow-y: auto;
+    flex-direction: column;
+    z-index: 999;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Активное мобильное меню */
+  .mobile-menu-mobile.active {
+    display: flex;
+    transform: translateY(0);
+  }
+
+/* Список в мобильном меню */
+.mobile-menu-mobile ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+/* Элементы списка в мобильном меню */
+.mobile-menu-mobile li {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Стили ссылок в мобильном меню */
+.mobile-menu-mobile a {
+  display: block;
+  padding: 12px 20px;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  position: relative;
+}
+
+/* Выпадающие пункты в мобильном меню */
+.mobile-menu-mobile .dropdown-content_mobile {
+  position: static;
+}
+
+
+
+/* Стили выпадающего меню в мобильной версии */
+.mobile-menu-mobile .dropdown-content_mobile {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+}
+
+/* Элементы выпадающего меню в мобильной версии */
+.mobile-menu-mobile .dropdown-content_mobile li {
+  /* padding: 10px 20px; */
+  padding-left: 40px;
   color: white;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+/* Активное выпадающее меню в мобильной версии */
+.mobile-menu-mobile .dropdown.active .dropdown-content_mobile {
+  max-height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* Эффект плавного появления мобильного меню снизу */
+.mobile-menu-mobile {
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+
+.mobile-item_color a:hover {
+  color: var(--icons-1);
+}
+
+/* === АДАПТИВ (до 1100px) === */
+@media (max-width: 1100px) {
+  /* Показываем бургер */
+  .burger-mobile {
+    display: flex;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Прячем десктопное меню */
+  .desktop-menu .dropdown-menu {
+    display: none;
   }
+
+ 
+
+  /* Фиксированная панель внизу */
+  .container-menu {
+    position: fixed;
+    margin-bottom: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Логотип — маленький */
+  .logo img {
+    height: 24px;
+  }
+
+  /* Бургер — чуть меньше */
+  .burger-mobile span {
+    width: 22px;
+    height: 3px;
+  }
+
+  /* Отступ у header и main */
+  header {
+    padding-bottom: 60px;
+  }
+
+  main {
+    margin-top: -60px;
+  }
+}
+
+.header-block_background {
+  background-image: url(/public/img/header_img/preview.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+/* === БУРГЕР-КНОПКА === */
+.burger-mobile {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 20;
+  background-color: #111;
+}
+
+.burger-mobile span {
+  width: 25px;
+  height: 3px;
+  background: var(--white);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+/* Анимация: бургер → крестик */
+.burger-mobile.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+.burger-mobile.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-mobile.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
