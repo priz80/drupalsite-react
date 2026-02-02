@@ -1,0 +1,91 @@
+/* Контейнер формы обратной связи */
+.formaContainer {
+  width: 100%;
+  max-width: 480px;
+  min-height: 480px;
+}
+
+/* Форма обратной связи */
+.forma {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+/* Поле ввода формы */
+.inputArea {
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 478px;
+  height: 68px;
+  opacity: 0.3;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--white);
+}
+
+/* Подсказка в поле ввода */
+.inputArea::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--white);
+  padding-left: 24px;
+}
+
+/* Текстовое поле формы */
+.textArea {
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 478px;
+  height: 128px;
+  opacity: 0.3;
+  background-color: transparent;
+}
+
+/* Подсказка в текстовом поле */
+.textArea::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--white);
+  padding-left: 24px;
+  padding-top: 26px;
+}
+
+/* Блок согласия с политикой */
+.agreement {
+  display: flex;
+  gap: 13px;
+  margin-top: 8px;
+  margin-bottom: 13px;
+}
+
+/* Метка согласия */
+.agreement label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--white);
+}
+
+/* Чекбокс согласия */
+.checkbox {
+  border: 2px solid var(--white);
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.5;
+}
+
+/* Кнопка отправки формы */
+.formaButton {
+  max-width: 480px;
+}
