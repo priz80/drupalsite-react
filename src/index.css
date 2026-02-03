@@ -21,7 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: var(--font-family);
   background: var(--white);
   color: var(--main-black);
@@ -39,4 +39,8 @@ a {
 p {
   margin: 0;
 }
+
+/* * {
+  outline: 1px solid red;
+} */
 
