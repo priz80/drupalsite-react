@@ -21,8 +21,6 @@ h2 {
   margin: 0;
 }
 
-
-
 /* Центрирование контейнера с максимальной шириной */
 .container {
   max-width: 1280px;
@@ -55,7 +53,6 @@ h2 {
 .button:hover {
   background: var(--icons-1);
 }
-
 
 /* Основной заголовок страницы */
 .header {
@@ -188,6 +185,9 @@ h2 {
 }
 
 @media (max-width: 1100px) {
+  h2 {
+    font-size: 28px;
+  }
   /* Основной заголовок страницы */
   .header {
     min-height: 292px;
@@ -316,30 +316,29 @@ h2 {
   }
 }
 
-
 /* === МОБИЛЬНОЕ МЕНЮ (адаптивное) === */
- /* Мобильное меню: скрыто по умолчанию */
-  .mobile-menu-mobile {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #111;
-    max-height: calc(100vh - 53px);
-    /* min-height: 100vh; */
-    overflow-y: auto;
-    flex-direction: column;
-    z-index: 999;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
-  }
+/* Мобильное меню: скрыто по умолчанию */
+.mobile-menu-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  max-height: calc(100vh - 53px);
+  /* min-height: 100vh; */
+  overflow-y: auto;
+  flex-direction: column;
+  z-index: 999;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
 
-  /* Активное мобильное меню */
-  .mobile-menu-mobile.active {
-    display: flex;
-    transform: translateY(0);
-  }
+/* Активное мобильное меню */
+.mobile-menu-mobile.active {
+  display: flex;
+  transform: translateY(0);
+}
 
 /* Список в мобильном меню */
 .mobile-menu-mobile ul {
@@ -375,8 +374,6 @@ h2 {
   position: static;
 }
 
-
-
 /* Стили выпадающего меню в мобильной версии */
 .mobile-menu-mobile .dropdown-content_mobile {
   margin: 0;
@@ -401,18 +398,15 @@ h2 {
   max-height: 100%;
 }
 
-
 /* Эффект плавного появления мобильного меню снизу */
 .mobile-menu-mobile {
   transform: translateY(100%);
   transition: transform 0.3s ease;
 }
 
-
 .mobile-item_color a:hover {
   color: var(--icons-1);
 }
-
 
 /* === БУРГЕР-КНОПКА === */
 .burger-mobile {
@@ -445,7 +439,6 @@ h2 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-
 /* === АДАПТИВ (до 1100px) === */
 @media (max-width: 1100px) {
   /* Показываем бургер */
@@ -457,8 +450,6 @@ h2 {
   .desktop-menu .dropdown-menu {
     display: none;
   }
-
- 
 
   /* Фиксированная панель внизу */
   .container-menu {
@@ -502,8 +493,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
-
 
 /* Заголовок секции services */
 .services-title {
@@ -554,18 +543,16 @@ h2 {
 
 /* Адаптивность: карточки услуг на мобильных */
 @media (max-width: 1100px) {
-    .services-item {
-  display: flex;
-  flex-direction: column;
-        align-items: center;
-}
-.services-item_img {
+  .services-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-item_img {
     left: 0px;
     top: 15px;
+  }
 }
-}
-
-
 
 /* Секция поддержки support */
 /* #support {
@@ -580,7 +567,7 @@ h2 {
   margin: 0 auto;
   margin-top: 160px;
   margin-bottom: 72px;
-  width: 406px;
+  max-width: 406px;
   text-align: center;
 }
 
@@ -642,8 +629,6 @@ h2 {
   }
 }
 
-
-
 /* Секция экспертов */
 #expert {
   position: relative;
@@ -689,7 +674,7 @@ h2 {
 
 /* Промо-блок эксперта */
 .expert-promo {
-  width: 580px;
+  max-width: 580px;
   display: flex;
   justify-content: space-between;
 }
@@ -799,8 +784,6 @@ h2 {
     bottom: -40px;
   }
 }
-
-
 
 /* Секция тарифных планов plans*/
 #plans {
@@ -961,7 +944,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 /* Ссылка внутри кнопки "взять тариф" */
@@ -1016,31 +998,27 @@ h2 {
   }
 
   .plans-item_block {
-  justify-content: center;
-  gap: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
 }
-}
-
-
 
 /* Секция дедлайнов deadline */
 #deadline {
-    margin-bottom: 160px;
+  margin-bottom: 160px;
 }
 
 /* Заголовок секции дедлайнов */
 .deadline-title {
-    max-width: 100%;
-    margin-bottom: 60px;
+  max-width: 100%;
+  margin-bottom: 60px;
 }
 
 /* Выделенный текст в элементе дедлайна */
 .deadline-item_text span {
-    font-size: 28px;
-    font-weight: 700;
+  font-size: 28px;
+  font-weight: 700;
 }
-
-
 
 /* Секция команды team*/
 #team {
@@ -1059,6 +1037,15 @@ h2 {
   flex-wrap: wrap;
   justify-content: left;
   gap: 120px;
+}
+
+@media (max-width: 1100px) {
+  .team-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 120px;
+  }
 }
 
 /* Карточка одного члена команды */
@@ -1092,7 +1079,6 @@ h2 {
   font-size: 12px;
   color: var(--main-black);
 }
-
 
 /* Секция кейсов cases*/
 #cases {
@@ -1167,21 +1153,19 @@ h2 {
 
 @media (max-width: 1280px) {
   /* Карточка стандартного кейса */
-.cases-tile {
+  .cases-tile {
     width: 100%;
     min-height: 475px;
   }
   /* Изображение в карточке кейса */
-.cases-tile_img {
+  .cases-tile_img {
     width: 100%;
   }
   /* Карточка большого кейса */
-.cases-tile_large {
-  width: 100%;
+  .cases-tile_large {
+    width: 100%;
+  }
 }
-}
-
-
 
 /* Секция партнеров partners*/
 #partners {
@@ -1267,10 +1251,6 @@ h2 {
     transform: translateX(-100%);
   }
 }
-
-
-
-
 
 /* Секция контактов contacty*/
 #contacty {
@@ -1521,13 +1501,22 @@ h2 {
   .contacty-image {
     display: none;
   }
-}
 
+  .laptop-expert_img {
+    width: 300px;
+    height: 296px;
+  }
+
+  .services-item_block {
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 /* Основной футер */
 #footer {
-    max-height: 150px;
-    padding-top: 56px;
+  max-height: 150px;
+  padding-top: 56px;
   padding-bottom: 54px;
 }
 
@@ -1545,7 +1534,6 @@ h2 {
   color: var(--white);
   opacity: 0.5;
 }
-
 
 /* Линия-разделитель в футере */
 .line-footer {
