@@ -25,7 +25,7 @@
 
 /* Заголовок секции отзывов */
 .reviews-title {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 46px;
 }
 
@@ -41,14 +41,13 @@
   max-width: 980px;
   min-height: 416px;
   display: flex;
-  /* padding: 80px 80px 88px 128px; */
+  padding: 80px 60px 60px 60px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   box-shadow: 0 4px 60px 0 rgba(161, 161, 161, 0.25);
   background: var(--white);
   gap: 60px;
 }
-
 
 
 /* Блок описания отзыва */
@@ -88,6 +87,7 @@
 .reviews-controls {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* Левая стрелка */
