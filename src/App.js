@@ -19,7 +19,7 @@ function App() {
     </video>
 
         <div className="druplicon">
-          <img src="/img/header_img/druplicon.svg" alt="Drupal" />
+          <img src="./img/header_img/druplicon.svg" alt="Drupal" />
         </div>
         <div className="container container-menu desktop-menu">
           <div className="logo">
