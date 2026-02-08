@@ -3,7 +3,7 @@ import Modal from './components/Modal';
 import { useState } from 'react';
 import Reviews from './components/Reviews';
 import Faq from './components/Faq';
-
+import VideoDrupal from "../src/video.mp4"
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,7 +14,7 @@ function App() {
       {isModalOpen && <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
       <header className="header">
         <video autoPlay muted loop playsInline>
-      <source src="./video/video.mp4" type="video/mp4" />
+      <source src={VideoDrupal} />
       Ваш браузер не поддерживает воспроизведение этого видео.
     </video>
 
