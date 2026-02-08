@@ -14,7 +14,7 @@ function App() {
       {isModalOpen && <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
       <header className="header">
         <video autoPlay muted loop playsInline>
-      <source src="/video/video.mp4" type="video/mp4" />
+      <source src="./video/video.mp4" type="video/mp4" />
       Ваш браузер не поддерживает воспроизведение этого видео.
     </video>
 
@@ -787,70 +787,70 @@ function App() {
             </div>
             <div className="partners-slider_container">
               <div className="slider-track_left">
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
               </div>
               <div className="slider-track_left">
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
               </div>
               <div className="slider-track_left">
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
               </div>
               <div className="slider-track_left">
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
               </div>
             </div>
             <div className="partners-slider_container">
               <div className="slider-track_right">
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
               </div>
               <div className="slider-track_right">
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
               </div>
               <div className="slider-track_right">
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
               </div>
               <div className="slider-track_right">
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
-                <div className="partners-slider_item"><img src="/img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image-gaz.png" alt="" /></div>
               </div>
             </div>
         </section>
