@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/drupalsite-react/static/css/main.a75a52eb.css",
-    "main.js": "/drupalsite-react/static/js/main.adac5dbf.js",
+    "main.js": "/drupalsite-react/static/js/main.46724e32.js",
     "static/media/preview.png": "/drupalsite-react/static/media/preview.f9fb1919092381fa73ff.png",
     "static/media/imagebig.png": "/drupalsite-react/static/media/imagebig.eeef5fa8d17ef537273f.png",
     "static/media/drupal-logo.png": "/drupalsite-react/static/media/drupal-logo.e3e1a8d5c8d3160d0dd3.png",
@@ -20,10 +20,10 @@
     "static/media/arrow-left.svg": "/drupalsite-react/static/media/arrow-left.de40a56965ed41f1b468.svg",
     "static/media/vline.svg": "/drupalsite-react/static/media/vline.6566a3103365bfafe2e7.svg",
     "main.a75a52eb.css.map": "/drupalsite-react/static/css/main.a75a52eb.css.map",
-    "main.adac5dbf.js.map": "/drupalsite-react/static/js/main.adac5dbf.js.map"
+    "main.46724e32.js.map": "/drupalsite-react/static/js/main.46724e32.js.map"
   },
   "entrypoints": [
     "static/css/main.a75a52eb.css",
-    "static/js/main.adac5dbf.js"
+    "static/js/main.46724e32.js"
   ]
 }
