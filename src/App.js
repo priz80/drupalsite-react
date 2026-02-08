@@ -14,7 +14,7 @@ function App() {
       {isModalOpen && <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
       <header className="header">
         <video autoPlay muted loop playsInline>
-      <source src="/video/video.mp4" type="video/mp4" />
+      <source src="./video/video.mp4" type="video/mp4" />
       Ваш браузер не поддерживает воспроизведение этого видео.
     </video>
 
