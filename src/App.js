@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Reviews from './components/Reviews';
 import Faq from './components/Faq';
 
+
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [triggerRect, setTriggerRect] = useState(null);
@@ -23,7 +24,7 @@ function App() {
         <div className="container container-menu desktop-menu">
           <div className="logo">
             <a href="/">
-              <img src="/img/menu_img/drupal-coder.svg" alt="Logo" />
+              <img src="./img/menu_img/drupal-coder.svg" alt="Logo" />
             </a>
           </div>
 
