@@ -787,7 +787,7 @@ function App() {
             </div>
             <div className="partners-slider_container">
               <div className="slider-track_left">
-                <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
+                <div className="partners-slider_item"><img src="./img/partners_img/image 10.png" alt="" /></div>
                 <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
                 <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
                 <div className="partners-slider_item"><img src="/img/partners_img/image 10.png" alt="" /></div>
