@@ -891,6 +891,7 @@ function App() {
                     required
                     className="input-area"
                     aria-label="Ваше имя"
+                    autocomplete="name"
                   />
                   <input
                     type="tel"
@@ -899,6 +900,7 @@ function App() {
                     required
                     className="input-area"
                     aria-label="Телефон"
+                    autocomplete="tel"
                   />
                   <input
                     type="email"
@@ -907,12 +909,14 @@ function App() {
                     required
                     className="input-area"
                     aria-label="Email"
+                    autocomplete="email"
                   />
                   <textarea
                     name="comment"
                     placeholder="Ваш комментарий"
                     className="text-area"
                     aria-label="Ваш комментарий"
+                    autocomplete="comment"
                   ></textarea>
 
                   <div className="agreement">
