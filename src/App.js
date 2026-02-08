@@ -24,7 +24,7 @@ function App() {
         <div className="container container-menu desktop-menu">
           <div className="logo">
             <a href="/">
-              <img src="/img/menu_img/drupal-coder.svg" alt="Logo" />
+              <img src="./img/menu_img/drupal-coder.svg" alt="Logo" />
             </a>
           </div>
 
